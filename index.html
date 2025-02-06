@@ -1,479 +1,206 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YokiToki</title>
-    <link rel="stylesheet" href="styles\style.css" />
-    <link rel="stylesheet" href="styles\cart.css" />
-  </head>
-  <body>
-    <header class="header">
-      <!-- Кнопка корзины -->
-      <button id="cartButton">
-        <img src="images/icons/basket.png" class="imgButton" />
-      </button>
-
-      <img src="images/mainImages/logo.jpg" class="logo" />
-      <button id="menuButton">
-        <img src="images/icons/menu.png" class="imgButton" id="menuIcon" />
-      </button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="carousel.css">
+</head>
+<body>
+    <header>
+        <section class="header1">
+            <img src="images/logo.png" class="logo">
+            <nav>
+                <ul>
+                    <a href="#">Main</a>
+                    <a href="#">Family Dentistry</a>
+                    <a href="#">Endodontist</a>
+                </ul>
+            </nav>
+        </section>
+        <section class="header2">
+            <div class="text-container">
+                <p>3801 Fairfax Drive Suite 30 Arlington VA 22203</p>
+                <p>+1 540-780-1158</p>
+            </div>
+            <img src="images/menu.png">
+        </section>
     </header>
-
-    <div id="cartOverlay" class="overlay"></div>
-    <!-- Оверлей для затемнения фона -->
-    <div class="overlay" id="overlay"></div>
-
-    <!-- Боковое меню -->
-    <aside class="sidebar" id="sidebar">
-      <nav>
-        <ul>
-          <li><a href="#">О нас</a></li>
-          <li><a href="#">Работа</a></li>
-          <li><a href="#">Калорийность и состав</a></li>
-          <li><a href="#">Контакты</a></li>
-          <li><a href="#">Франшиза</a></li>
-        </ul>
-      </nav>
-    </aside>
-
-    <!-- Боковая панель корзины -->
-    <div id="cartSidebar" class="cart-sidebar">
-      <div class="cart-header">
-        <h2>Корзина</h2>
-        <p class="cart-summary">Итого: <span id="cartTotal">0₽</span></p>
-      </div>
-      <div class="cart-content">
-        <div id="cartItems" class="cart-items"></div>
-        <div id="emptyCart" class="empty-cart">
-          <h3>Корзина пуста</h3>
-          <p>Добавьте товары из меню</p>
-        </div>
-      </div>
-      <!-- Футер с кнопкой "Перейти к оформлению" -->
-      <div class="checkout-footer">
-        <button class="checkout-button">Перейти к оформлению</button>
-      </div>
-    </div>
-
+    
     <main>
-      <div class="title" style="margin-right: 12px">
-        <h2>Популярное</h2>
-      </div>
-      <section class="carouselPopular">
+        <section class="content">
+            <img src="images/smile.png" alt="Изображение">
+            <div class="card1">
+                <div class="cardContet">
+                    <p class="pCard">Dentists
+                        you can trust</p>
+                    <button>consult the experts</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="contentCard2">
+            <div class = "decoration"><h1>Why should you choose us?</h1></div>
+            <div class="card2">
+                <div class="cardContet3">
+                    <div>
+                        <h3>Comprehensive Services</h3>
+                        <p>Arlington dentists provide a full spectrum of services</p>
+            
+                        <h3>Advanced Technology</h3>
+                        <p>Practices use state-of-the-art tools</p>
+            
+                        <h3>Personalized Care</h3>
+                        <p>Dentists prioritize patient comfort</p>
+            
+                        <h3>Convenient Locations</h3>
+                        <p>Multiple offices are strategically located</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="carouselTitle-container">
+            <h1 class="carouselTitle">Services and prices</h1>
+        </section>
         <div class="carousel-container">
-          <div class="popularBlock">
-            <img src="images/mainImages/tomYum.jpg" />
-            <div>
-              <h2>Том-ям с курицей</h2>
-              <div class="priceBlock">
-                <h3 class="price">269₽</h3>
-                <p>470 г</p>
-              </div>
-              <p class="description">
-                Паста том ям, куринная грудка, грибы шампиньоны, помидор, рис
-              </p>
+            <div class="carousel-track">
+
+            
+                <div class="carousel-item">
+                    <div class="carouselElem">
+                        <h1>Pediatric Dentistry</h1>
+                        <div id = "p0">
+                            <div>
+                                <p>Child-friendly environments</p>
+                                <p>Preventive treatments like sealants</p>
+                            </div>
+                            
+                            <div class="price"><h3>100-400$</h3></div>
+                        </div>
+                    </div>
+                </div>
+
+              <div class="carousel-item">
+                    <div class="carouselElem">
+                        <h1>Cosmetic Dentistry</h1>
+                        <div id = "p0">
+                            <div>
+                                <p>Teeth whitening</p>
+                                <p>Veneers</p>
+                                <p>Invisaling</p>
+                            </div>
+                            
+                            <div  class="price"><h3>300-600$</h3></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carouselElem">
+                        <h1>Preventive Dentistry</h1>
+                        <div id = "p0">
+                            <div>
+                                <p>Routine cleanings</p>
+                                <p>Digital X-rays</p>
+                                <p>Fluoride treatments  </p>
+                            </div>
+                            
+                            <div  class="price"><h3>75-200$</h3></div>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="carousel-item">
+                    <div class="carouselElem">
+                        <h1>Restorative Dentistry</h1>
+                        <div id = "p0">
+                            <div>
+                                <p>Dental crowns and bridges</p>
+                                <p>Root canal therapy</p>
+                            </div>
+                            
+                            <div  class="price"><h3>200-500$</h3></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carouselElem">
+                        <h1>Emergency Dental Care</h1>
+                        <div id = "p0">
+                            <div>
+                                <p>Same-day appointments</p>
+                                <p>Treatment for toothaches or broken teeth</p>
+                            </div>
+                            
+                            <div class="price"><h3>100-200$</h3></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <button class="add-to-cart"><h4>В корзину</h4></button>
+            
+            <button class="carousel-btn prev"><img src="images/arrow.jpg" style="transform: rotate(180deg);"></button>
+            <button class="carousel-btn next"><img src="images/arrow.jpg"></button>
+            
           </div>
-
-          <div class="popularBlock">
-            <img src="images/mainImages/Tonkacy.jpg" style="height: 54%" />
-            <div>
-              <h2>Курица Тонкацу</h2>
-              <div class="priceBlock">
-                <h3 class="price">279₽</h3>
-                <p>230 г</p>
-              </div>
-              <p class="description">
-                Куриная отбивная, рис, соус Тонкацу, зеленый лук
-              </p>
+        <section id="faq">
+            <div class="faq-container">
+                <div class="title-container">
+                    <h2>FAQs about our dentists</h2>
+                </div>
+                <div class="faq-text">
+                    <div class="faq-item">
+                        <h3>Do Arlington dentists offer sedation options?</h3>
+                        <p>Yes, many practices provide sedation dentistry to ensure patient comfort during procedures.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Can I find eco-friendly dental practices in Arlington?</h3>
+                        <p>Absolutely! Some dentists prioritize sustainability by using eco-friendly materials and reducing waste.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What should I do in a dental emergency?</h3>
+                        <p>Contact a local dentist immediately. Many Arlington practices offer same-day appointments for emergencies.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Are there bilingual dentists in Arlington?</h3>
+                        <p>Yes, several dentists in Arlington speak multiple languages to cater to diverse patients.</p>
+                    </div>
+                </div>
             </div>
-            <button class="add-to-cart"><h4>В корзину</h4></button>
-          </div>
-
-          <div class="popularBlock">
-            <img src="images/mainImages/wok/terkur.jpg" />
-            <div>
-              <h2>Терияки с курицей</h2>
-              <div class="priceBlock">
-                <h3 class="price">259₽</h3>
-                <p>280 г</p>
-              </div>
-              <p class="description">
-                Рис, куриное филе, морковь, перец болгарский, цукини
-              </p>
-            </div>
-            <button class="add-to-cart"><h4>В корзину</h4></button>
-          </div>
-          <div class="popularBlock">
-            <img src="images/mainImages/roles/lavaf.jpg" />
-            <div>
-              <h2>Ролл Лава Фурай</h2>
-              <div class="priceBlock">
-                <h3 class="price">349₽</h3>
-                <p>240 г</p>
-              </div>
-              <p class="description">
-                Рис, тигровые креветки, творожный сыр, соус «лава»
-              </p>
-            </div>
-            <button class="add-to-cart"><h4>В корзину</h4></button>
-          </div>
-          <!-- Пустой блок для отступа -->
-          <div
-            class="popularBlockHidden"
-            style="visibility: hidden; width: 1px"
-          ></div>
-        </div>
-      </section>
-
-      <section class="menu">
-        <div class="title">
-          <h2>Меню</h2>
-        </div>
-        <section style="width: 89%">
-          <div class="menucard">
-            <div class="category" id="wokButton">Воки</div>
-            <div class="category" id="saladsButton">Салаты</div>
-            <div class="category" id="rolesButton">Роллы</div>
-            <div class="category" id="soupesButton">Супы</div>
-            <!-- Кнопка для Супов -->
-          </div>
         </section>
-        <section class="wok">
-          <section class="menuBlocks">
-            <div class="menuBlock">
-              <img src="images/mainImages/wok/gov.jpg" />
-              <div>
-                <h2>Терияки с говядиной</h2>
-                <div class="priceBlockMenu">
-                  <h3 class="priceMenu">269₽</h3>
-                  <p>260 г</p>
+        <footer>
+            <div class="footer-container">
+                <div class="contact-map">
+                    <div class="contact-info">
+                        <h3>Contact</h3>
+                        <p>ㅤ</p>
+                        <p>3801 N. Fairfax Drive<br>Suite 30 Arlington VA</p>
+                        <p>ㅤ</p>
+                        <p>+15407801158</p>
+                        <p>svvdmd@gmail.com</p>
+                    </div>
+                    <div class="map">
+                        <img src="images/image.png" alt="Map">
+                    </div>
+                    <div class="office-hours">
+                        <h3>Office hours</h3>
+                        <p>ㅤ</p>
+                        <div class="footerinfo"><p><span class="day">Monday to Thursday:</span></p> 
+                        <p><span class="time">8:00 AM - 5:00 PM</span></p></div>
+                        <p>ㅤ</p>
+                        <div class="footerinfo"><p><span class="day">Friday:</span></p>
+                        <p><span class="time">8:00 AM - 3:00 PM</span></p></div>
+                    </div>
                 </div>
-                <p class="descriptionMenu">
-                  Говядина, пшеничная лапша, фасоль стручковая, перец
-                  болгарский, соус терияки
-                </p>
-              </div>
-              <button class="add-to-cart"><h4>В корзину</h4></button>
+                
             </div>
+        </footer>
 
-            <div class="menuBlock">
-              <img src="images/mainImages/wok/karb.jpg" />
-              <div>
-                <h2>Карбонар</h2>
-                <div class="priceBlockMenu">
-                  <h3 class="priceMenu">269₽</h3>
-                  <p>260 г</p>
-                </div>
-                <p class="descriptionMenu">
-                  Лапша, бекон, грибы шампиньоны, сливки, соевый соус, зеленый
-                  лук
-                </p>
-              </div>
-              <button class="add-to-cart"><h4>В корзину</h4></button>
-            </div>
-
-            <div class="menuBlock">
-              <img src="images/mainImages/wok/sliv.jpg" />
-              <div>
-                <h2>Сливочный</h2>
-                <div class="priceBlockMenu">
-                  <h3 class="priceMenu">269₽</h3>
-                  <p>260 г</p>
-                </div>
-                <p class="descriptionMenu">
-                  Пшеничная лапша, курица, грибы шампиньоны, сливки
-                </p>
-              </div>
-              <button class="add-to-cart"><h4>В корзину</h4></button>
-            </div>
-
-            <div class="menuBlock">
-              <img src="images/mainImages/wok/svin.jpg" />
-              <div>
-                <h2>Со свининой и ананасами</h2>
-                <div class="priceBlockMenu">
-                  <h3 class="priceMenu">259₽</h3>
-                  <p>260 г</p>
-                </div>
-                <p class="descriptionMenu">
-                  Пшеничная лапша, свинина, ананас, имбриь, соус Чили
-                </p>
-              </div>
-              <button class="add-to-cart"><h4>В корзину</h4></button>
-            </div>
-
-            <div class="menuBlock">
-              <img src="images/mainImages/wok/terkur.jpg" />
-              <div>
-                <h2>Терияки с курицей</h2>
-                <div class="priceBlockMenu">
-                  <h3 class="priceMenu">255₽</h3>
-                  <p>260 г</p>
-                </div>
-                <p class="descriptionMenu">
-                  Курица, пшеничная лапша, фасоль стручковая, соевый соус, соус
-                  терияки
-                </p>
-              </div>
-              <button class="add-to-cart"><h4>В корзину</h4></button>
-            </div>
-
-            <div class="menuBlock">
-              <img src="images/mainImages/wok/udon.jpg" />
-              <div>
-                <h2>Удон с курицей</h2>
-                <div class="priceBlockMenu">
-                  <h3 class="priceMenu">259₽</h3>
-                  <p>260 г</p>
-                </div>
-                <p class="descriptionMenu">
-                  Куриное филе, капуста пекинская, лапша пшеничная, соус чили,
-                  соус устричный
-                </p>
-              </div>
-              <button class="add-to-cart"><h4>В корзину</h4></button>
-            </div>
-
-            <div class="menuBlock">
-              <img src="images/mainImages/wok/tah.jpg" />
-              <div>
-                <h2>Тяхан с говядиной</h2>
-                <div class="priceBlockMenu">
-                  <h3 class="priceMenu">279₽</h3>
-                  <p>260 г</p>
-                </div>
-                <p class="descriptionMenu">
-                  Говядина, рис, лук репчатый, соевый соус, кунжутное масло
-                </p>
-              </div>
-              <button class="add-to-cart"><h4>В корзину</h4></button>
-            </div>
-
-            <div class="menuBlock">
-              <img src="images/mainImages/wok/tah.jpg" />
-              <div>
-                <h2>Тяхан с курицей</h2>
-                <div class="priceBlockMenu">
-                  <h3 class="priceMenu">259₽</h3>
-                  <p>260 г</p>
-                </div>
-                <p class="descriptionMenu">
-                  Курца, рис, перец болгарский, лук репчатый, соевый соус,
-                  кунжутное масло
-                </p>
-              </div>
-              <button class="add-to-cart"><h4>В корзину</h4></button>
-            </div>
-
-            <div class="menuBlock">
-              <img src="images/mainImages/wok/umi.jpg" />
-              <div>
-                <h2>Уми гохан</h2>
-                <div class="priceBlockMenu">
-                  <h3 class="priceMenu">299₽</h3>
-                  <p>260 г</p>
-                </div>
-                <p class="descriptionMenu">
-                  Рис, кальмар, креветки коктейльные, яйцо куриное, перец Чили,
-                  соевый соус
-                </p>
-              </div>
-              <button class="add-to-cart"><h4>В корзину</h4></button>
-            </div>
-          </section>
-        </section>
-
-        <section class="roles">
-          <section class="menuBlocks">
-            <div class="menuBlock">
-              <img src="images/mainImages/roles/bonito.jpg" />
-              <div>
-                <h2>Ролл эби бонито</h2>
-                <div class="priceBlockMenu">
-                  <h3 class="priceMenu">309₽</h3>
-                  <p>260 г</p>
-                </div>
-                <p class="descriptionMenu">
-                  Рис, лист нори, сыр сливочный, креветка тигровая, соус бонито
-                </p>
-              </div>
-              <button class="add-to-cart"><h4>В корзину</h4></button>
-            </div>
-
-            <div class="menuBlock">
-              <img src="images/mainImages/roles/cesar.jpg" />
-              <div>
-                <h2>Ролл Цезарь</h2>
-                <div class="priceBlockMenu">
-                  <h3 class="priceMenu">279₽</h3>
-                  <p>260 г</p>
-                </div>
-                <p class="descriptionMenu">
-                  Пшеничная лепешка, куриная грудка, помидор, помидор, пекинская
-                  капуста
-                </p>
-              </div>
-              <button class="add-to-cart"><h4>В корзину</h4></button>
-            </div>
-
-            <div class="menuBlock">
-              <img src="images/mainImages/roles/lavaf.jpg" />
-              <div>
-                <h2>Ролл Лава Фурай</h2>
-                <div class="priceBlockMenu">
-                  <h3 class="priceMenu">349₽</h3>
-                  <p>260 г</p>
-                </div>
-                <p class="descriptionMenu">
-                  Ролл с начинкой из риса, тигровой креветки и творожного сыра
-                </p>
-              </div>
-              <button class="add-to-cart"><h4>В корзину</h4></button>
-            </div>
-
-            <div class="menuBlock">
-              <img src="images/mainImages/roles/laval2.jpg" />
-              <div>
-                <h2>Ролл Лава с лососем</h2>
-                <div class="priceBlockMenu">
-                  <h3 class="priceMenu">359₽</h3>
-                  <p>260 г</p>
-                </div>
-                <p class="descriptionMenu">
-                  Ролл с начинкой из Риса , лосося и творожного сыра
-                </p>
-              </div>
-              <button class="add-to-cart"><h4>В корзину</h4></button>
-            </div>
-
-            <div class="menuBlock">
-              <img src="images/mainImages/roles/laval.jpg" />
-              <div>
-                <h2>Жареный ролл с лососем</h2>
-                <div class="priceBlockMenu">
-                  <h3 class="priceMenu">369₽</h3>
-                  <p>260 г</p>
-                </div>
-                <p class="descriptionMenu">
-                  Ролл с начинкой из Риса, филе лосося и творожного сыра
-                </p>
-              </div>
-              <button class="add-to-cart"><h4>В корзину</h4></button>
-            </div>
-          </section>
-        </section>
-
-        <section class="salads">
-          <section class="menuBlocks">
-            <div class="menuBlock">
-              <img src="images/mainImages/salads/cesar.jpg" />
-              <div>
-                <h2>Цезарь с курицей</h2>
-                <div class="priceBlockMenu">
-                  <h3 class="priceMenu">219₽</h3>
-                  <p>260 г</p>
-                </div>
-                <p class="descriptionMenu">
-                  Куриная грудка, помидор, сухари, пекинская капуста, соус
-                  «Цезарь»
-                </p>
-              </div>
-              <button class="add-to-cart"><h4>В корзину</h4></button>
-            </div>
-
-            <div class="menuBlock">
-              <img src="images/mainImages/salads/keysek.jpg" />
-              <div>
-                <h2>Кейсеку</h2>
-                <div class="priceBlockMenu">
-                  <h3 class="priceMenu">219₽</h3>
-                  <p>260 г</p>
-                </div>
-                <p class="descriptionMenu">
-                  Пекинская капуста, морковь, редис, огурец, куриное филе
-                  карамелезировано
-                </p>
-              </div>
-              <button class="add-to-cart"><h4>В корзину</h4></button>
-            </div>
-
-            <div class="menuBlock">
-              <img src="images/mainImages/salads/schick.jpg" />
-              <div>
-                <h2>Салат Чикен</h2>
-                <div class="priceBlockMenu">
-                  <h3 class="priceMenu">269₽</h3>
-                  <p>260 г</p>
-                </div>
-                <p class="descriptionMenu">
-                  Куриное запечное филе, пекинская капуста, помидор, красный
-                  лук, яйцо
-                </p>
-              </div>
-              <button class="add-to-cart"><h4>В корзину</h4></button>
-            </div>
-          </section>
-        </section>
-
-        <section class="soupes">
-          <section class="menuBlocks">
-            <div class="menuBlock">
-              <img src="images/mainImages/soupes/ramen.jpg" />
-              <div>
-                <h2>Рамен сырный</h2>
-                <div class="priceBlockMenu">
-                  <h3 class="priceMenu">269₽</h3>
-                  <p>260 г</p>
-                </div>
-                <p class="descriptionMenu">
-                  Сырный бульон, пшеничная лапша, запечённое куриное филе
-                </p>
-              </div>
-              <button class="add-to-cart"><h4>В корзину</h4></button>
-            </div>
-
-            <div class="menuBlock">
-              <img src="images/mainImages/soupes/tomyam.jpg" />
-              <div>
-                <h2>Том ям с курицей</h2>
-                <div class="priceBlockMenu">
-                  <h3 class="priceMenu">269₽</h3>
-                  <p>260 г</p>
-                </div>
-                <p class="descriptionMenu">
-                  Бульон, имбирь, чеснок, паста том ям, паста том кха, перец
-                  чили, лемонграсс
-                </p>
-              </div>
-              <button class="add-to-cart"><h4>В корзину</h4></button>
-            </div>
-          </section>
-        </section>
-      </section>
-
-      <footer class="footer">
-        <div class="footerData">
-          <h3 class="footerInf">yokitoki@email.com</h3>
-          <p>О нас</p>
-          <p>Калорийность и состав</p>
-          <p>Работа</p>
-          <p>Помощь</p>
-          <h3 class="footerInf" style="margin-top: 15%">
-            ©2025 ООО “Йоки Токи”
-          </h3>
-          <h3 class="footerInf">ОГРН 1131101001954, ИНН 1101140476</h3>
-          <h3 class="footerInf">
-            63400, Томская область, г. Томск, ул. Усова, 6а
-          </h3>
-        </div>
-      </footer>
+        
     </main>
-
-    <script src="src/menuscript.js"></script>
-    <script src="src/menubuttons.js"></script>
-    <script src="src/cartscript.js"></script>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
